@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6321A9B51B94EBA10053D2E7"
-               BuildableName = "Flash Chat.app"
-               BlueprintName = "Flash Chat"
-               ReferencedContainer = "container:Flash Chat.xcodeproj">
+               BuildableName = "DASH-chat.app"
+               BlueprintName = "DASH-chat"
+               ReferencedContainer = "container:DASH-chat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,27 +29,27 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6321A9CA1B94EBA10053D2E7"
-               BuildableName = "Flash ChatTests.xctest"
-               BlueprintName = "Flash ChatTests"
-               ReferencedContainer = "container:Flash Chat.xcodeproj">
+               BuildableName = "DASH-chatTests.xctest"
+               BlueprintName = "DASH-chatTests"
+               ReferencedContainer = "container:DASH-chat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6321A9CA1B94EBA10053D2E7"
-               BuildableName = "Flash ChatTests.xctest"
-               BlueprintName = "Flash ChatTests"
-               ReferencedContainer = "container:Flash Chat.xcodeproj">
+               BuildableName = "DASH-chatTests.xctest"
+               BlueprintName = "DASH-chatTests"
+               ReferencedContainer = "container:DASH-chat.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,51 +57,48 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6321A9B51B94EBA10053D2E7"
-            BuildableName = "Flash Chat.app"
-            BlueprintName = "Flash Chat"
-            ReferencedContainer = "container:Flash Chat.xcodeproj">
+            BuildableName = "DASH-chat.app"
+            BlueprintName = "DASH-chat"
+            ReferencedContainer = "container:DASH-chat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6321A9B51B94EBA10053D2E7"
-            BuildableName = "Flash Chat.app"
-            BlueprintName = "Flash Chat"
-            ReferencedContainer = "container:Flash Chat.xcodeproj">
+            BuildableName = "DASH-chat.app"
+            BlueprintName = "DASH-chat"
+            ReferencedContainer = "container:DASH-chat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6321A9B51B94EBA10053D2E7"
-            BuildableName = "Flash Chat.app"
-            BlueprintName = "Flash Chat"
-            ReferencedContainer = "container:Flash Chat.xcodeproj">
+            BuildableName = "DASH-chat.app"
+            BlueprintName = "DASH-chat"
+            ReferencedContainer = "container:DASH-chat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

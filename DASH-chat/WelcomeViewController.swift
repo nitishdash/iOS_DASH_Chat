@@ -1,6 +1,6 @@
 //
 //  WelcomeViewController.swift
-//  Flash Chat
+//  DASH-chat
 //
 //  This is the welcome view controller - the first thign the user sees
 //

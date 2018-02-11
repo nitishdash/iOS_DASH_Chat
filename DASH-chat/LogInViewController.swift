@@ -1,6 +1,6 @@
 //
 //  LogInViewController.swift
-//  Flash Chat
+//  DASH-chat
 //
 //  This is the view controller where users login
 

@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6321A9B61B94EBA10053D2E7 /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6321A9B61B94EBA10053D2E7 /* DASH-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DASH-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9BA1B94EBA10053D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6321A9C21B94EBA10053D2E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		6321A9AD1B94EBA10053D2E7 = {
 			isa = PBXGroup;
 			children = (
-				6321A9B81B94EBA10053D2E7 /* Flash Chat */,
+				6321A9B81B94EBA10053D2E7 /* DASH-chat */,
 				6321A9B71B94EBA10053D2E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		6321A9B71B94EBA10053D2E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6321A9B61B94EBA10053D2E7 /* Flash Chat.app */,
+				6321A9B61B94EBA10053D2E7 /* DASH-chat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6321A9B81B94EBA10053D2E7 /* Flash Chat */ = {
+		6321A9B81B94EBA10053D2E7 /* DASH-chat */ = {
 			isa = PBXGroup;
 			children = (
 				6321A9EE1B94EC360053D2E7 /* Model */,
@@ -72,7 +72,7 @@
 				6321A9C21B94EBA10053D2E7 /* Images.xcassets */,
 				6321A9B91B94EBA10053D2E7 /* Supporting Files */,
 			);
-			path = "Flash Chat";
+			path = "DASH-chat";
 			sourceTree = "<group>";
 		};
 		6321A9B91B94EBA10053D2E7 /* Supporting Files */ = {
@@ -125,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6321A9B51B94EBA10053D2E7 /* Flash Chat */ = {
+		6321A9B51B94EBA10053D2E7 /* DASH-chat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "Flash Chat" */;
+			buildConfigurationList = 6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "DASH-chat" */;
 			buildPhases = (
 				6321A9B21B94EBA10053D2E7 /* Sources */,
 				6321A9B31B94EBA10053D2E7 /* Frameworks */,
@@ -137,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = "Flash Chat";
-			productName = "Flash Chat";
-			productReference = 6321A9B61B94EBA10053D2E7 /* Flash Chat.app */;
+			name = "DASH-chat";
+			productName = "DASH-chat";
+			productReference = 6321A9B61B94EBA10053D2E7 /* DASH-chat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Flash Chat" */;
+			buildConfigurationList = 6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "DASH-chat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6321A9B51B94EBA10053D2E7 /* Flash Chat */,
+				6321A9B51B94EBA10053D2E7 /* DASH-chat */,
 			);
 		};
 /* End PBXProject section */
@@ -319,7 +319,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Flash Chat/Info.plist";
+				INFOPLIST_FILE = "DASH-chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.YourName.Flash-Chat";
@@ -340,7 +340,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Flash Chat/Info.plist";
+				INFOPLIST_FILE = "DASH-chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.YourName.Flash-Chat";
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Flash Chat" */ = {
+		6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "DASH-chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6321A9D31B94EBA10053D2E7 /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "Flash Chat" */ = {
+		6321A9D51B94EBA10053D2E7 /* Build configuration list for PBXNativeTarget "DASH-chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6321A9D61B94EBA10053D2E7 /* Debug */,

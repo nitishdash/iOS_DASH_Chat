@@ -1,6 +1,6 @@
 //
 //  Message.swift
-//  Flash Chat
+//  DASH-chat
 //
 //  This is the model class that represents the blueprint for a message
 

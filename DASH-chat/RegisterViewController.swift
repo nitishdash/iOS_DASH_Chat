@@ -1,6 +1,6 @@
 //
 //  RegisterViewController.swift
-//  Flash Chat
+//  DASH-chat
 //
 //  This is the View Controller which registers new users with Firebase
 //
