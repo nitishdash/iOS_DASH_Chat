@@ -1,0 +1,6 @@
+framework module Pods_DASH_chat {
+  umbrella header "Pods-DASH-chat-umbrella.h"
+
+  export *
+  module * { export * }
+}
