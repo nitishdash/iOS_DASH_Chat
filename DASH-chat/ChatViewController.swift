@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  DASH-chat
 //
-//  Created by Angela Yu on 29/08/2015.
-//  Copyright (c) 2015 London App Brewery. All rights reserved.
+//  Created by Nitish Dash
+//  Copyright (c) 2018 Nitish Dash. All rights reserved.
 //
 
 import UIKit
