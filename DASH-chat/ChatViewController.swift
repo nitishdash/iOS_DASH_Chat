@@ -8,11 +8,12 @@
 
 import UIKit
 import Firebase
+import ChameleonFramework
 
 class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     // Declare instance variables here
-
+    var messageArray : [Message] = [Message]()
     
     // We've pre-linked the IBOutlets
     @IBOutlet var heightConstraint: NSLayoutConstraint!
@@ -36,7 +37,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         configureTableView()
+        retrieveMessages()
         
+        messageTableView.separatorStyle = .none
     }
 
     ///////////////////////////////////////////
@@ -48,20 +51,39 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     //TODO: Declare cellForRowAtIndexPath here:
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
-        let messageArray = ["1assads", "😇", "1212edsa dfsfsd"]
-        cell.messageBody.text = messageArray[indexPath.row]
+        
+        cell.messageBody.text = messageArray[indexPath.row].messageBody
+        cell.senderUsername.text = messageArray[indexPath.row].sender
+        
+        
+        if messageArray[indexPath.row].sender == "rick@netflix.com" {
+            cell.avatarImageView.image = UIImage.init(named: "rick")
+        }
+        else if messageArray[indexPath.row].sender == "morty@netflix.com" {
+            cell.avatarImageView.image = UIImage.init(named: "morty")
+        }
+        else {
+            cell.avatarImageView.image = UIImage.init(named: "egg")
+        }
+        
+        if cell.senderUsername.text == Auth.auth().currentUser?.email as String! {
+                cell.avatarImageView.backgroundColor = UIColor.flatBlue()
+                cell.messageBackground.backgroundColor = UIColor.flatTeal()
+        }
+        
+        
         return cell
     }
     
     
     //TODO: Declare numberOfRowsInSection here:
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return messageArray.count
     }
     
     
     //TODO: Declare tableViewTapped here:
-    func tableViewTapped() {
+    @objc func tableViewTapped() {
         messageTextfield.endEditing(true)
     }
 
@@ -109,14 +131,43 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func sendPressed(_ sender: AnyObject) {
         
+        messageTextfield.endEditing(true)
+        messageTextfield.isEnabled = false
+        sendButton.isEnabled = false
         
-        //TODO: Send the message to Firebase and save it in our database
-        
-        
+        let messageDB = Database.database().reference().child("Messages")
+        let messageDict = ["Sender" : Auth.auth().currentUser?.email, "MessageBody": messageTextfield.text!]
+        messageDB.childByAutoId().setValue(messageDict) {
+            (error, ref) in
+            if(error != nil) {
+                print(error!)
+            }
+            else {
+                print("Message saved")
+                self.messageTextfield.isEnabled = true
+                self.sendButton.isEnabled = true
+                self.messageTextfield.text = ""
+            }
+        }
     }
     
     //TODO: Create the retrieveMessages method here:
     
+    func retrieveMessages() {
+        let messageDB = Database.database().reference().child("Messages")
+        messageDB.observe(.childAdded) { (snapshot) in
+            let snapshotValue = snapshot.value as! Dictionary<String,String>
+            let text = snapshotValue["MessageBody"]!
+            let sender = snapshotValue["Sender"]!
+            print(text, sender)
+            let message = Message()
+            message.messageBody = text
+            message.sender = sender
+            self.messageArray.append(message)
+            self.configureTableView()
+            self.messageTableView.reloadData()
+        }
+    }
     
 
     
